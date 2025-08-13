@@ -1,0 +1,672 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    color: #000000;
+    text-decoration: none;
+    position: relative;
+}
+
+a:hover::after {
+    width: 100%;
+}
+
+.site-header {
+    background-color: #212529;
+}
+
+.header-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.header-img {
+    width: 100px;
+}
+
+.header-nav-bar {
+    width: 450px;
+}
+
+.header-nav-bar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.header-nav-bar ul li {
+    list-style: none;
+}
+
+.header-nav-bar li a {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: #ffffff;
+}
+
+.header-nav-bar li p {
+    margin: 0;
+}
+
+.header-nav-bar li a::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    left: 0px;
+    bottom: -3px;
+    background-color: #ffffff;
+    transition: all 0.4s ease-in-out;
+}
+
+.header-nav-bar a:hover::after {
+    width: 100%;
+}
+
+.banner-flex {
+    display: flex;
+    align-items: center;
+    background-color: #212529;
+}
+
+.username {
+    color: #ffffff;
+    width: 850px;
+    padding: 50px;
+}
+
+.username-heading h2 {
+    font-size: 30px;
+    font-family: 'Inter';
+    text-transform: capitalize;
+}
+
+.username-heading h2 small {
+    font-size: 60px;
+    font-weight: 500;
+    display: block;
+}
+
+.user-info {
+    width: 260px;
+    padding-left: 10px;
+}
+
+.user-link a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.user-link-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.user-link-text {
+    font-family: 'Inter';
+}
+
+.user-link-text p {
+    margin: 0;
+}
+
+.user-link-svg svg {
+    width: 20px;
+    height: 20px;
+}
+
+.link {
+    margin-bottom: 50px;
+}
+
+.link-flex {
+    display: flex;
+    align-items: center;
+    background-color: #dcdcdc;
+}
+
+.link-arrow-flex {
+    display: inline-flex;
+    align-items: center;
+    font-family: sans-serif;
+}
+
+.link-arrow-body {
+    width: 100px;
+    font-size: 14px;
+    background-color: #000000;
+    color: #ffffff;
+    padding: 18px 0;
+    padding-left: 39px;
+}
+
+.link-arrow-body p {
+    margin: 0;
+}
+
+.link-arrow-head {
+    width: 0;
+    height: 0;
+    border-top: 28px solid transparent;
+    border-bottom: 28px solid transparent;
+    border-left: 30px solid #000000;
+}
+
+.link-text {
+    font-family: 'Inter';
+    padding-left: 10px;
+}
+
+.link-text p {
+    margin: 0;
+}
+
+.link-text p a {
+    color: #000000;
+    text-decoration: none;
+}
+
+.about-me {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 350px;
+}
+
+.about-me-heading h2 {
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.about-me-text {
+    font-family: 'Inter';
+    color: #000000;
+}
+
+.about-me-text {
+    font-family: 'Inter';
+    color: #000000;
+}
+
+.about-me-text small {
+    display: block;
+    text-transform: capitalize
+}
+
+.about-me-button button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+.about-me-button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.about-me-button button a p {
+    margin: 0;
+}
+
+.about-me-button button:hover {
+    background-color: #000000;
+}
+
+.about-me-button button a:hover {
+    color: #ffffff;
+}
+
+.education {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 350px;
+}
+
+.education-heading h2 {
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.education-text {
+    font-family: 'Inter';
+    color: #000000;
+}
+
+.education-button button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+.education-button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.education-button button a p {
+    margin: 0;
+}
+
+.education-button button:hover {
+    background-color: #000000;
+}
+
+.education-button button a:hover {
+    color: #ffffff;
+}
+
+.experience {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 350px;
+}
+
+.experience-heading h2 {
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.experience-text {
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.experience-text small {
+    display: block;
+    font-size: 14px;
+    font-family: 'Inter';
+    color: #000000;
+    text-transform: capitalize;
+}
+
+.experience-button button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+.experience-button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.experience-button button a p {
+    margin: 0;
+}
+
+.experience-button button:hover {
+    background-color: #000000;
+}
+
+.experience-button button a:hover {
+    color: #ffffff;
+}
+
+.skills {
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 350px;
+}
+
+.skills-heading h2 {
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.skill-text {
+    color: #000000;
+    font-family: 'Inter';
+}
+
+.skill-button button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+.skill-button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.skill-button button a p {
+    margin: 0;
+}
+
+.skill-button button:hover {
+    background-color: #000000;
+}
+
+.skill-button button a:hover {
+    color: #ffffff;
+}
+
+.personal {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 350px;
+}
+
+.personal-heading h2 {
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.personal-text {
+    font-family: 'Inter';
+}
+
+.personal-button button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+.personal-button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.personal-button button a p {
+    margin: 0;
+}
+
+.personal-button button:hover {
+    background-color: #000000;
+}
+
+.personal-button button a:hover {
+    color: #ffffff;
+}
+
+.projects {
+    padding: 20px;
+    text-align: center;
+    margin-bottom: 50px;
+    padding: 0 350px;
+}
+
+.projects-heading h2 {
+    font-family: 'Inter';
+    text-transform: uppercase;
+}
+
+.projects-text {
+    font-family: 'Inter';
+}
+
+.projects-button button {
+    border: 1px solid black;
+    background: transparent;
+    padding: 5px 10px;
+    padding-top: 2px;
+    border-radius: 10px;
+}
+
+.projects-button button a {
+    text-decoration: none;
+    color: black;
+}
+
+.projects-button button a p {
+    margin: 0;
+}
+
+.projects-button button:hover {
+    background-color: #000000;
+}
+
+.projects-button button a:hover {
+    color: #ffffff;
+}
+
+.site-footer {
+    background-color: #212529;
+}
+
+.contact-flex {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-left-section {
+    width: 300px;
+    margin-top: 50px;
+}
+
+.contact-main-heading h2 {
+    font-size: 60px;
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #ffffff;
+}
+
+.contact-list-heading h2 {
+    font-size: 20px;
+    font-family: 'Inter';
+    font-weight: 600;
+    color: #ffffff;
+    text-transform: capitalize;
+}
+
+.contact a {
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.contact-list-flex {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+    align-items: center;
+    width: 300px;
+}
+
+.contact-list ul {
+    padding: 0;
+}
+
+.contact-list ul li {
+    list-style: none;
+}
+
+.contact-text {
+    font-family: 'Inter';
+    width: 250px;
+}
+
+.contact-text p {
+    margin: 0;
+}
+
+.contact-svg svg {
+    width: 20px;
+    height: 20px;
+}
+
+.contact-svg svg path{
+    fill: #ffffff;
+    stroke: transparent;
+}
+
+.contact-right-section {
+    margin-top: 50px;
+}
+
+.contact-links {
+    position: relative;
+    border-bottom: 2px solid #ffffff;
+    height: 150px;
+}
+
+.contact-links-flex {
+    display: flex;
+    align-items: center;
+}
+
+.links-button-1 {
+    position: absolute;
+    top: 128px;
+    left: 200px;
+}
+
+.links-button-1 button {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    background-color: #212529;
+}
+
+.links-button-1 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter';
+}
+
+.links-button-1 p {
+    margin: 0;
+}
+
+.links-button-1 button:hover {
+    background-color: #ffffff;
+}
+
+.links-button-1 a:hover {
+    color: #212529;
+}
+
+.links-button-2 {
+    position: absolute;
+    top: 128px;
+    left: 400px;
+}
+
+.links-button-2 button {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    background-color: #212529;
+}
+
+.links-button-2 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter';
+}
+
+.links-button-2 p {
+    margin: 0;
+}
+
+.links-button-2 button:hover {
+    background-color: #ffffff;
+}
+
+.links-button-2 a:hover {
+    color: #212529;
+}
+
+.links-button-3 {
+    position: absolute;
+    top: 128px;
+    left: 600px;
+}
+
+.links-button-3 button {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    background-color: #212529;
+}
+
+.links-button-3 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter';
+}
+
+.links-button-3 p {
+    margin: 0;
+}
+
+.links-button-3 button:hover {
+    background-color: #ffffff;
+}
+
+.links-button-3 a:hover {
+    color: #212529;
+}
+
+.links-button-4 {
+    position: absolute;
+    top: 128px;
+    left: 800px;
+}
+
+.links-button-4 button {
+    border: 2px solid #ffffff;
+    border-radius: 20px;
+    width: 100px;
+    padding: 5px;
+    background-color: #212529;
+}
+
+.links-button-4 a {
+    text-decoration: none;
+    color: #ffffff;
+    font-family: 'Inter';
+}
+
+.links-button-4 p {
+    margin: 0;
+}
+
+.links-button-4 button:hover {
+    background-color: #ffffff;
+}
+
+.links-button-4 a:hover {
+    color: #212529;
+}
+
+.contact-copyright {
+    height: 50px;
+}
+
+.copyright {
+    color: #ffffff;
+    font-family: 'Inter';
+    text-align: end;
+    margin-top: 70px;
+}
+
+.copyright p {
+    margin: 0;
+}
